@@ -97,6 +97,7 @@ public final class HttpClientService {
 			JsonObject response = new JsonObject(json);
 			log.info(response);
 			if(!"200".equals(response.getString("code"))) {
+				// log request error log
 			}
 		} 
 		log.info((System.currentTimeMillis() - startTime) + " milliseconds");
