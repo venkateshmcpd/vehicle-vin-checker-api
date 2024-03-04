@@ -9,7 +9,7 @@ modify config file vin-checker-config.json to point to  MS SQL Server database
 
 create new database in MS SQL Server
 go to /sql-scripts folder
-run script DDL.sql 
+run script DDL.sql
 run script DML.sql
 
 build code and run jar with the following command
