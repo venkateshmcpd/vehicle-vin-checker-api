@@ -1,0 +1,16 @@
+{
+	"sql_config": {
+		"driver_class_name": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
+		"jdbc_url": "jdbc:sqlserver://DESKTOP-K03FD1T:1433;database=VIN_data;loginTimeout=10;",
+		"user_name": "sa",
+		"password": "Passw0rd",
+		"max_con_pool_size" : 500,
+		"connection_time_out" : 600000,
+		"cache_prep_stmts" : true,
+		"prep_stmt_cache_size" : 250,
+		"prep_stmt_cache_sql_limit": 2048		
+	},
+	"app_config" : {
+		"vpic_api_url":"https://vpic.nhtsa.dot.gov"
+	}
+}

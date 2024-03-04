@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> <Configuration monitorInterval="15"
+                                                      packages="org.apache.logging.log4j.core">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss} [%red{%10.25t}] [%green{%-5p}] [%blue{%c{1}:%L}] - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+        </Root>
+        <Logger name="vin.checker" level="info" includeLocation="true"/>
+    </Loggers>
+</Configuration>
