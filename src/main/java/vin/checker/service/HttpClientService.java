@@ -51,11 +51,9 @@ public final class HttpClientService {
 		try(CloseableHttpClient client = HttpClients.createDefault()) {
 			CloseableHttpResponse apiResponse = client.execute(httpGet);
 			String json = EntityUtils.toString(apiResponse.getEntity());
-			System.out.println(json);
 			JsonObject response = new JsonObject(json);			
 			log.info(response);
 			log.info((System.currentTimeMillis() - startTime) + " milliseconds");
-			log.info(" -------------------------------------------------------------------------------------------- ");
 			return response;
 		} 
 	}	
